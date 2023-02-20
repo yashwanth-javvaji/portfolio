@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { IoMdMail } from "react-icons/io";
 
@@ -286,7 +286,7 @@ export default function Contact({ }: Props) {
             }}
             className="min-h-screen flex flex-col max-w-5xl justify-start items-center mx-auto pt-10 pb-40 px-9"
         >
-            <h3 className="uppercase tracking-[20px] font-semibold text-gray-800 dark:text-gray-100 text-2xl mb-9">
+            <h3 className="uppercase tracking-[11px] text-center font-semibold text-gray-800 dark:text-gray-100 text-2xl pl-[11px] mb-9">
                 Contact Me
             </h3>
             <div className="bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-2xl p-4 sm:p-6 md:p-8">

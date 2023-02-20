@@ -1,13 +1,12 @@
-import React from "react";
-import { useTheme } from 'next-themes'
-import { Disclosure } from '@headlessui/react';
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useTheme } from 'next-themes'
+import { Disclosure } from '@headlessui/react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { GrClose } from 'react-icons/gr';
 import { IoMdMail, IoMdCall } from 'react-icons/io';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
+import { VscChromeClose } from 'react-icons/vsc';
 
 const navigation = [
     { name: 'About', href: '/about' },
@@ -86,7 +85,7 @@ export default function Navbar() {
                                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 outline-none text-white hover:bg-white hover:text-blue-900">
                                         <span className="sr-only">Open main menu</span>
                                         {open ? (
-                                            <GrClose className="block h-6 w-6" aria-hidden="true" />
+                                            <VscChromeClose className="block h-6 w-6" aria-hidden="true" />
                                         ) : (
                                             <GiHamburgerMenu className="block h-6 w-6" aria-hidden="true" />
                                         )}
@@ -97,7 +96,7 @@ export default function Navbar() {
                     </div>
 
                     <Disclosure.Panel className="sm:hidden">
-                        <div className="space-y-1 px-2 pt-2 pb-3">
+                        <div className="flex flex-col justify-center items-end space-y-1 px-2 pt-2 pb-3">
                             {navigation.map((item) => (
                                 <Link
                                     key={item.name}

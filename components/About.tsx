@@ -16,7 +16,7 @@ export default function About({ }: Props) {
             }}
             className="min-h-screen flex flex-col max-w-5xl justify-start items-center mx-auto pt-10 pb-40 px-9"
         >
-            <h3 className="uppercase tracking-[20px] font-semibold text-gray-800 dark:text-gray-100 text-2xl mb-9">
+            <h3 className="uppercase tracking-[11px] text-center font-semibold text-gray-800 dark:text-gray-100 text-2xl pl-[11px] mb-9">
                 About Me
             </h3>
             <div className="space-y-3 text-black dark:text-white text-lg text-justify">

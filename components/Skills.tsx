@@ -33,7 +33,7 @@ const skills = [
     "Laravel",
     "Spring Framework",
     "Flutter",
-    "SciKit-Learn",
+    "Scikit-learn",
     "Microsoft Office Suite",
     "Git",
     "Docker",
@@ -56,7 +56,7 @@ export default function Skills({ }: Props) {
             }}
             className="min-h-screen flex flex-col max-w-5xl justify-start items-center mx-auto pt-10 pb-40 px-9"
         >
-            <h3 className="uppercase tracking-[20px] font-semibold text-gray-800 dark:text-gray-100 text-2xl mb-9">
+            <h3 className="uppercase tracking-[11px] text-center font-semibold text-gray-800 dark:text-gray-100 text-2xl pl-[11px] mb-9">
                 Skills
             </h3>
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">

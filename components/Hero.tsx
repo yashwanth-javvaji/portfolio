@@ -1,8 +1,7 @@
-import React from "react";
 import Image from 'next/image';
+import { motion } from "framer-motion";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { FaArrowRight } from 'react-icons/fa';
-import { motion } from "framer-motion";
 
 type Props = {};
 
