@@ -13,7 +13,7 @@ export default function Projects({ }: Props) {
             .then((data) => {
                 setProjects(
                     data
-                        .filter((project: { name: string; }) => !["javvajiyashwanth", "major-project-common"].includes(project.name))
+                        .filter((project: { name: string; }) => !["yashwanth-javvaji", "major-project-common"].includes(project.name))
                         .sort((a: { created_at: string; }, b: { created_at: string; }) => b.created_at.localeCompare(a.created_at))
                 );
             });

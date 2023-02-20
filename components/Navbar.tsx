@@ -66,7 +66,7 @@ export default function Navbar() {
                                 <a href="https://www.linkedin.com/in/yashwanth-javvaji/" target="_blank" rel="noreferrer">
                                     <FaLinkedin className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-100" />
                                 </a>
-                                <a href="https://github.com/javvajiyashwanth" target="_blank" rel="noreferrer">
+                                <a href="https://github.com/yashwanth-javvaji" target="_blank" rel="noreferrer">
                                     <FaGithub className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-100" />
                                 </a>
                                 <a href="mailto:yashwanthjavvaji208@gmail.com">
