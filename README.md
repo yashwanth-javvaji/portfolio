@@ -25,21 +25,13 @@ This project was built using the following technologies:
 ## Getting Started
 To get started with the project, follow these steps:
 - Clone the repository.
-   ```
-   git clone https://github.com/yashwanth-javvaji/portfolio.git
-   ```
+<br />```git clone https://github.com/yashwanth-javvaji/portfolio.git```
 - Navigate into the project directory.
-   ```
-   cd portfolio
-   ```
+<br />```cd portfolio```
 - Install the project dependencies.
-   ```
-   npm install
-   ```
+<br />```npm install```
 - Start the development server.
-   ```
-   npm run dev
-   ```
+<br />```npm run dev```
 - Open the website in your browser by navigating to http://localhost:3000.
 
 ## Usage
