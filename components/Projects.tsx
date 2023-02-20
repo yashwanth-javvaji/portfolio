@@ -8,7 +8,7 @@ export default function Projects({ }: Props) {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        fetch("https://api.github.com/users/javvajiyashwanth/repos")
+        fetch("https://api.github.com/users/yashwanth-javvaji/repos")
             .then((res) => res.json())
             .then((data) => {
                 setProjects(
