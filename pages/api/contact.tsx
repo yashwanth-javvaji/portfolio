@@ -24,7 +24,6 @@ export default async function handler(
       secure: true,
     });
 
-    console.log("transporter created");
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: "yashwanthjavvaji208@gmail.com",
@@ -34,7 +33,6 @@ export default async function handler(
 
     res.status(200).json({ error: '' });
   } catch (error: any) {
-    console.error(error);
     const statusCode = error.response ? error.response.status : 500;
     res.status(statusCode).json({ error: error.message });
   }
