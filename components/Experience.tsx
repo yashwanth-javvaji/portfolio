@@ -8,15 +8,15 @@ const experiences = [
         "Title": "Software Dev Engineer Intern",
         "Company name": "Amazon Web Services (AWS)",
         "Start date": "May 2023",
-        "End date": "Current",
-        "Description": "",
+        "End date": "Present",
+        "Description": "Currently Working",
     },
     {
         "Title": "Microsoft Learn Student Ambassador",
         "Company name": "UT Dallas Office of Information Technology",
         "Start date": "January 2023",
         "End date": "April 2023",
-        "Description": "Successfully finished the Microsoft Ambassador Program, an esteemed initiative that enhances knowledge and skills related to Microsoft 365. Developed advanced abilities in utilizing Microsoft 365 tools and technologies through interactive workshops and training sessions. Delivered a final presentation on Microsoft Integration to diverse audiences, effectively communicating complex concepts. Engaged in team-based activities and workshops, fostering effective communication, problem-solving, and collaboration skills.• Successfully finished the Microsoft Ambassador Program, an esteemed initiative that enhances knowledge and skills related to Microsoft 365. • Developed advanced abilities in utilizing Microsoft 365 tools and technologies through interactive workshops and training sessions. • Delivered a final presentation on Microsoft Integration to diverse audiences, effectively communicating complex concepts. • Engaged in team-based activities and workshops, fostering effective communication, problem-solving, and collaboration skills.",
+        "Description": "Successfully finished the Microsoft Ambassador Program, an esteemed initiative that enhances knowledge and skills related to Microsoft 365. Developed advanced abilities in utilizing Microsoft 365 tools and technologies through interactive workshops and training sessions. Delivered a final presentation on Microsoft Integration to diverse audiences, effectively communicating complex concepts. Engaged in team-based activities and workshops, fostering effective communication, problem-solving, and collaboration skills.",
     },
     {
         "Title": "Student Assistant",
