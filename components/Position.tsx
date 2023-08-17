@@ -6,7 +6,7 @@ type Props = {
         "Company name": string,
         "Start date": string,
         "End date": string,
-        "Description": string,
+        "Description": string[],
     }
 };
 
@@ -24,13 +24,7 @@ export default function Position({ experience }: Props) {
             <h4 className="flex items-center mb-2 text-lg text-gray-800 dark:text-gray-100">{experience["Company name"]}</h4>
             <time className="block mb-2 text-base font-normal leading-none text-gray-500 dark:text-gray-400">{experience["Start date"]} - {experience["End date"]}</time>
             <ul className="mb-4 text-base font-normal text-gray-900 dark:text-gray-50 list-disc ml-4">
-                {experience["Description"].split(". ").map((sentence, index) => {
-                    return (
-                        <li key={index}>
-                            {sentence}.
-                        </li>
-                    )
-                })}
+                {experience["Description"].map((point, index) => <li key={index}>{point}</li>)}
             </ul>
         </li>
     )
