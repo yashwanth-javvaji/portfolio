@@ -1,9 +1,10 @@
-import '@/styles/globals.css'
+import '~/styles/globals.css'
+
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
 import NextNProgress from 'nextjs-progressbar';
 
-export default function App({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider attribute="class">
       <NextNProgress color="#fff" />
@@ -11,3 +12,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </ThemeProvider>
   )
 }
+
+export default App;

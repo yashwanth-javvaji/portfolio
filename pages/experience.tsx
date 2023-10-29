@@ -1,10 +1,12 @@
-import ContainerBlock from "@/components/ContainerBlock";
-import Experience from "@/components/Experience";
+import ContainerBlock from "~/components/ContainerBlock";
+import Experience from "~/components/Experience";
 
-export default function AboutPage() {
+const ExperiencePage = () => {
     return (
         <ContainerBlock>
             <Experience />
         </ContainerBlock>
     )
 }
+
+export default ExperiencePage;

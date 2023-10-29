@@ -1,11 +1,11 @@
+import { Disclosure } from '@headlessui/react';
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTheme } from 'next-themes'
-import { Disclosure } from '@headlessui/react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { IoMdMail, IoMdCall } from 'react-icons/io';
-import { MdLightMode, MdDarkMode } from 'react-icons/md';
+import { IoMdCall, IoMdMail } from 'react-icons/io';
+import { MdDarkMode, MdLightMode } from 'react-icons/md';
 import { VscChromeClose } from 'react-icons/vsc';
 
 const navigation = [
@@ -15,11 +15,11 @@ const navigation = [
     { name: 'Contact', href: '/contact' },
 ]
 
-function classNames(...classes: string[]) {
+const classNames = (...classes: string[]) => {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Navbar() {
+const Navbar = () => {
     const { theme, setTheme } = useTheme();
     const router = useRouter();
 
@@ -117,3 +117,5 @@ export default function Navbar() {
         </Disclosure>
     )
 }
+
+export default Navbar;

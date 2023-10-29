@@ -1,10 +1,12 @@
-import ContainerBlock from "@/components/ContainerBlock";
-import About from "@/components/About";
+import About from "~/components/About";
+import ContainerBlock from "~/components/ContainerBlock";
 
-export default function AboutPage() {
+const AboutPage = () => {
     return (
         <ContainerBlock>
             <About />
         </ContainerBlock>
     )
 }
+
+export default AboutPage;

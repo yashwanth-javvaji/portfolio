@@ -5,10 +5,10 @@ type Data = {
   error: string
 }
 
-export default async function handler(
+const handler = async (
   req: NextApiRequest,
   res: NextApiResponse<Data>
-) {
+) => {
   let nodemailer = require('nodemailer');
 
   const { firstName, lastName, email, subject, message } = req.body;
@@ -37,3 +37,5 @@ export default async function handler(
     res.status(statusCode).json({ error: error.message });
   }
 }
+
+export default handler;

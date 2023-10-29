@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import Project from "./Project";
+import React, { useEffect, useState } from "react";
 
-type Props = {};
+import Project from "~/components/Project";
 
-export default function Projects({ }: Props) {
+const Projects = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
@@ -45,3 +44,5 @@ export default function Projects({ }: Props) {
         </motion.div>
     )
 }
+
+export default Projects;

@@ -1,12 +1,10 @@
-import Image from 'next/image';
 import { motion } from "framer-motion";
-import { Cursor, useTypewriter } from "react-simple-typewriter";
+import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-type Props = {};
-
-export default function Hero({ }: Props) {
-    const [text, count] = useTypewriter({
+const Hero = () => {
+    const [text, _] = useTypewriter({
         words: [
             "Sofware Engineer",
             "Full-Stack Developer",
@@ -61,3 +59,5 @@ export default function Hero({ }: Props) {
         </motion.div>
     );
 }
+
+export default Hero;

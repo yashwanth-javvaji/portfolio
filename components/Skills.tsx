@@ -1,8 +1,8 @@
+
 import { motion } from "framer-motion";
 import { FaArrowRight } from 'react-icons/fa';
-import Skill from "./Skill";
 
-type Props = {};
+import Skill from "~/components/Skill";
 
 const skills = [
     "C",
@@ -42,7 +42,7 @@ const skills = [
     "AWS",
 ];
 
-export default function Skills({ }: Props) {
+const Skills = () => {
     return (
         <motion.div
             initial={{
@@ -70,3 +70,5 @@ export default function Skills({ }: Props) {
         </motion.div>
     )
 }
+
+export default Skills;

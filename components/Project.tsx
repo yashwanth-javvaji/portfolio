@@ -11,13 +11,13 @@ type Props = {
     };
 };
 
-function capitalize(strings: string[]) {
+const capitalize = (strings: string[]) => {
     return strings.map((string) => {
         return string.charAt(0).toUpperCase() + string.slice(1);
     });
 }
 
-export default function Project({ project }: Props) {
+const Project = ({ project }: Props) => {
     return (
         <div className="rounded overflow-hidden shadow-2xl hover:scale-105">
             <div className="px-6 py-4">
@@ -38,3 +38,5 @@ export default function Project({ project }: Props) {
         </div>
     )
 }
+
+export default Project;

@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
-import Achievement from "./Achievement";
 
-type Props = {};
+import Achievement from "~/components/Achievement";
 
 const achievements = [
     {
@@ -22,7 +21,7 @@ const achievements = [
     },
 ];
 
-export default function About({ }: Props) {
+const Achievements = () => {
     return (
         <motion.div
             initial={{
@@ -50,3 +49,5 @@ export default function About({ }: Props) {
         </motion.div>
     )
 }
+
+export default Achievements;

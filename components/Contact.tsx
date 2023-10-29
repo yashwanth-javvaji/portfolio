@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
+import React, { useState } from "react";
 import { IoMdMail } from "react-icons/io";
-
-type Props = {};
 
 const initialFormData = {
     firstName: "",
@@ -47,33 +45,28 @@ const lengthValidation = {
     },
 }
 
-function isValueEmpty(value: string) {
+const isValueEmpty = (value: string) => {
     return value === "";
 }
 
-function isEmailValid(email: string) {
+const isEmailValid = (email: string) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-function checkLength(value: string, min: number, max: number) {
+const checkLength = (value: string, min: number, max: number) => {
     return value.length >= min && value.length <= max;
 }
 
-function classNames(...classes: string[]) {
+const classNames = (...classes: string[]) => {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Contact({ }: Props) {
+const Contact = () => {
     const [formData, setFormData] = useState(initialFormData);
-
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-
     const [isFormSubmitting, setIsFormSubmitting] = useState(false);
-
     const [formSubmitStatus, setFormSubmitStatus] = useState<"success" | "error">("success");
-
     const [formErrors, setFormErrors] = useState(initialFormErrors);
-
     const [formValid, setFormValid] = useState(initialFormValid);
 
     const handleContactFormChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -108,10 +101,8 @@ export default function Contact({ }: Props) {
         e.preventDefault();
 
         if (Object.values(formValid).every(Boolean)) {
-            setIsFormSubmitted(true);
-
             setIsFormSubmitting(true);
-
+            
             const res = await fetch("/api/contact", {
                 body: JSON.stringify({
                     ...formData,
@@ -121,15 +112,16 @@ export default function Contact({ }: Props) {
                 },
                 method: "POST",
             });
-
+            
             if (!res.ok) {
                 setFormSubmitStatus("error");
             } else {
                 setFormSubmitStatus("success");
                 setFormData(initialFormData);
             }
-
+            
             setIsFormSubmitting(false);
+            setIsFormSubmitted(true);
         }
     };
 
@@ -425,3 +417,5 @@ export default function Contact({ }: Props) {
         </motion.div>
     )
 }
+
+export default Contact;

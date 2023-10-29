@@ -4,7 +4,7 @@ type Props = {
     skill: string,
 };
 
-export default function Skills({ skill }: Props) {
+const Skill = ({ skill }: Props) => {
     return (
         <div
             className="group relative flex flex-col justify-center items-center max-w-sm rounded overflow-hidden shadow-2xl bg-transparent p-3 hover:scale-105"
@@ -20,3 +20,5 @@ export default function Skills({ skill }: Props) {
         </div>
     )
 }
+
+export default Skill;

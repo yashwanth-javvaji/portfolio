@@ -1,11 +1,12 @@
 import { BsArrowUpCircleFill } from "react-icons/bs";
-import ContainerBlock from '@/components/ContainerBlock'
-import Hero from '@/components/Hero'
-import Skills from '@/components/Skills'
-import Achievements from '@/components/Achievements'
-import Contact from '@/components/Contact'
 
-export default function HomePage() {
+import Achievements from '~/components/Achievements'
+import Contact from '~/components/Contact'
+import ContainerBlock from '~/components/ContainerBlock'
+import Hero from '~/components/Hero'
+import Skills from '~/components/Skills'
+
+const HomePage = () => {
   return (
     <ContainerBlock>
       <div className="h-screen text-white snap-y snap-mandatory overflow-scroll z-0">
@@ -36,3 +37,5 @@ export default function HomePage() {
     </ContainerBlock>
   )
 }
+
+export default HomePage;

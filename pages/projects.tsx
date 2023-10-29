@@ -1,10 +1,12 @@
-import ContainerBlock from "@/components/ContainerBlock";
-import Projects from "@/components/Projects";
+import ContainerBlock from "~/components/ContainerBlock";
+import Projects from "~/components/Projects";
 
-export default function AboutPage() {
+const ProjectsPage = () => {
     return (
         <ContainerBlock>
             <Projects />
         </ContainerBlock>
     )
 }
+
+export default ProjectsPage;

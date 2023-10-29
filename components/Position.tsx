@@ -10,7 +10,7 @@ type Props = {
     }
 };
 
-export default function Position({ experience }: Props) {
+const Position = ({ experience }: Props) => {
     return (
         <li className="mb-10 ml-6">
             <Image
@@ -29,3 +29,5 @@ export default function Position({ experience }: Props) {
         </li>
     )
 }
+
+export default Position;

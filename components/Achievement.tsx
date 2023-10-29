@@ -6,7 +6,7 @@ type Props = {
     }
 };
 
-export default function Achievement({ achievement }: Props) {
+const Achievement = ({ achievement }: Props) => {
     return (
         <li className="mb-10 ml-4">
             <div className="absolute w-4 h-4 bg-gray-200 rounded-full mt-1.5 -left-2 border border-gray-50 dark:border-gray-900 dark:bg-gray-700"></div>
@@ -16,3 +16,5 @@ export default function Achievement({ achievement }: Props) {
         </li>
     )
 }
+
+export default Achievement;

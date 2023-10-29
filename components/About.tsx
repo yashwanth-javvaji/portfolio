@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 
-type Props = {};
-
-export default function About({ }: Props) {
+const About = () => {
     return (
         <motion.div
             initial={{
@@ -36,3 +34,5 @@ export default function About({ }: Props) {
         </motion.div>
     )
 }
+
+export default About;

@@ -1,10 +1,12 @@
-import ContainerBlock from "@/components/ContainerBlock";
-import Contact from "@/components/Contact";
+import Contact from "~/components/Contact";
+import ContainerBlock from "~/components/ContainerBlock";
 
-export default function AboutPage() {
+const ContactPage = () => {
     return (
         <ContainerBlock>
             <Contact />
         </ContainerBlock>
     )
 }
+
+export default ContactPage;

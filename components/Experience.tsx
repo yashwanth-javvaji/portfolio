@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import Position from "./Position";
 
-type Props = {};
+import Position from "~/components/Position";
 
 const experiences = [
     {
@@ -92,7 +91,7 @@ const experiences = [
     }
 ];
 
-export default function Experience({ }: Props) {
+const Experience = () => {
     return (
         <motion.div
             initial={{
@@ -117,3 +116,5 @@ export default function Experience({ }: Props) {
         </motion.div>
     )
 }
+
+export default Experience;
