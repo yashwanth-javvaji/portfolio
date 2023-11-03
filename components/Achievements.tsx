@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 
 import Achievement from "~/components/Achievement";
@@ -23,18 +22,7 @@ const achievements = [
 
 const Achievements = () => {
     return (
-        <motion.div
-            initial={{
-                opacity: 0,
-            }}
-            whileInView={{
-                opacity: 1,
-            }}
-            transition={{
-                duration: 1.5,
-            }}
-            className="min-h-screen flex flex-col max-w-5xl justify-start items-center mx-auto pt-10 pb-40 px-9"
-        >
+        <>
             <h3 className="uppercase tracking-[11px] text-center font-semibold text-gray-800 dark:text-gray-100 text-2xl pl-[11px] mb-9">
                 Achievements
             </h3>
@@ -43,10 +31,10 @@ const Achievements = () => {
                     <Achievement achievement={achievement} key={index} />
                 ))}
             </ol>
-            <a href="#achievements" className="mt-10 flex flex-row justify-center items-center text-base font-semibold leading-7 text-black dark:text-white hover:scale-110 transition duration-100">
+            <a href="#achievements" className="mt-10 flex flex-row justify-center items-center mx-auto text-base font-semibold leading-7 text-black dark:text-white hover:scale-110 transition duration-100">
                 Get it touch &nbsp; <FaArrowRight className="inline-block" />
             </a>
-        </motion.div>
+        </>
     )
 }
 

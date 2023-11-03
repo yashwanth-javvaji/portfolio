@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
 import { Cursor, useTypewriter } from "react-simple-typewriter";
@@ -17,28 +16,17 @@ const Hero = () => {
     })
 
     return (
-        <motion.div
-            initial={{
-                opacity: 0,
-            }}
-            whileInView={{
-                opacity: 1,
-            }}
-            transition={{
-                duration: 1.5,
-            }}
-            className="min-h-screen flex flex-col space-y-8 justify-start items-center text-center mx-auto pt-10 pb-40 px-9"
-        >
+        <>
             <Image
                 src="/avatar.png"
                 alt="avatar"
                 height={300}
                 width={300}
-                className="rounded-2xl mx-auto object-cover shadow-2xl w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80"
+                className="rounded-2xl mx-auto object-cover shadow-2xl w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 mb-8"
             />
             <div>
-                <h2 className="text-2xl uppercase text-gray-800 dark:text-gray-100 mb-3 tracking-[11px]">Yashwanth Javvaji</h2>
-                <h1 className="text-5xl lg:text-6xl text-black dark:text-white font-semibold px-10">
+                <h2 className="text-center text-2xl uppercase text-gray-800 dark:text-gray-100 mb-3 tracking-[11px]">Yashwanth Javvaji</h2>
+                <h1 className="text-center text-5xl lg:text-6xl text-black dark:text-white font-semibold px-10">
                     <span>{text}</span>
                     <Cursor />
                 </h1>
@@ -56,7 +44,7 @@ const Hero = () => {
                     </a>
                 </div>
             </div>
-        </motion.div>
+        </>
     );
 }
 

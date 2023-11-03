@@ -1,11 +1,11 @@
 import Contact from "~/components/Contact";
-import ContainerBlock from "~/components/ContainerBlock";
+import Layout from "~/components/Layout";
 
 const ContactPage = () => {
     return (
-        <ContainerBlock>
+        <Layout>
             <Contact />
-        </ContainerBlock>
+        </Layout>
     )
 }
 

@@ -7,7 +7,7 @@ type Props = {
 const Skill = ({ skill }: Props) => {
     return (
         <div
-            className="group relative flex flex-col justify-center items-center max-w-sm rounded overflow-hidden shadow-2xl bg-transparent p-3 hover:scale-105"
+            className="group relative flex flex-col justify-center items-center mx-auto max-w-sm rounded overflow-hidden shadow-2xl bg-transparent p-3 hover:scale-105"
         >
             <Image
                 src={`/images/skills/${skill}.jpeg`}

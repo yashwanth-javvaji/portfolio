@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { IoMdMail } from "react-icons/io";
 
@@ -102,7 +101,7 @@ const Contact = () => {
 
         if (Object.values(formValid).every(Boolean)) {
             setIsFormSubmitting(true);
-            
+
             const res = await fetch("/api/contact", {
                 body: JSON.stringify({
                     ...formData,
@@ -112,14 +111,14 @@ const Contact = () => {
                 },
                 method: "POST",
             });
-            
+
             if (!res.ok) {
                 setFormSubmitStatus("error");
             } else {
                 setFormSubmitStatus("success");
                 setFormData(initialFormData);
             }
-            
+
             setIsFormSubmitting(false);
             setIsFormSubmitted(true);
         }
@@ -266,18 +265,7 @@ const Contact = () => {
     };
 
     return (
-        <motion.div
-            initial={{
-                opacity: 0,
-            }}
-            whileInView={{
-                opacity: 1,
-            }}
-            transition={{
-                duration: 1.5,
-            }}
-            className="min-h-screen flex flex-col max-w-5xl justify-start items-center mx-auto pt-10 pb-40 px-9"
-        >
+        <>
             <h3 className="uppercase tracking-[11px] text-center font-semibold text-gray-800 dark:text-gray-100 text-2xl pl-[11px] mb-9">
                 Contact Me
             </h3>
@@ -406,7 +394,7 @@ const Contact = () => {
                         Thank you for contacting me. I will get back to you as soon as possible.
                     </p>
                 ) : (
-                    <div className="mt-4 flex flex-row justify-center items-center gap-2 text-sm text-red-600 dark:text-red-500">
+                    <div className="mt-4 flex flex-row justify-center items-center mx-auto gap-2 text-sm text-red-600 dark:text-red-500">
                         <span>Oops! Something went wrong. Please try again or send an email.</span>
                         <a href="mailto:yashwanthjavvaji208@gmail.com" className="inline-block">
                             <IoMdMail className="h-6 w-6 text-white cursor-pointer hover:scale-125 hover:animate-pulse transition duration-100" />
@@ -414,7 +402,7 @@ const Contact = () => {
                     </div>
                 ))}
             </div>
-        </motion.div>
+        </>
     )
 }
 

@@ -2,6 +2,7 @@ import { Disclosure } from '@headlessui/react';
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTheme } from 'next-themes'
+import { forwardRef } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdCall, IoMdMail } from 'react-icons/io';
@@ -19,7 +20,7 @@ const classNames = (...classes: string[]) => {
     return classes.filter(Boolean).join(' ')
 }
 
-const Navbar = () => {
+const Navbar = forwardRef<HTMLDivElement>((_, ref) => {
     const { theme, setTheme } = useTheme();
     const router = useRouter();
 
@@ -32,7 +33,7 @@ const Navbar = () => {
     }
 
     return (
-        <Disclosure as="nav" className="bg-blue-900 sticky top-0 z-20">
+        <Disclosure as="nav" className="bg-blue-900 sticky top-0 z-20" ref={ref}>
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -116,6 +117,8 @@ const Navbar = () => {
             )}
         </Disclosure>
     )
-}
+})
+
+Navbar.displayName = 'Navbar';
 
 export default Navbar;

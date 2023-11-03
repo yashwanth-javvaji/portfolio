@@ -1,19 +1,7 @@
-import { motion } from "framer-motion";
 
 const About = () => {
     return (
-        <motion.div
-            initial={{
-                opacity: 0,
-            }}
-            whileInView={{
-                opacity: 1,
-            }}
-            transition={{
-                duration: 1.5,
-            }}
-            className="min-h-screen flex flex-col max-w-5xl justify-start items-center mx-auto pt-10 pb-40 px-9"
-        >
+        <>
             <h3 className="uppercase tracking-[11px] text-center font-semibold text-gray-800 dark:text-gray-100 text-2xl pl-[11px] mb-9">
                 About Me
             </h3>
@@ -31,7 +19,7 @@ const About = () => {
                     In addition to my skills in coding, I also worked as a placement coordinator. In this role, I was in charge of arranging placement-related tasks such as contacting human resources, providing guidance to students, responding to their emails, and gathering and storing student data to aid the placements team.
                 </p>
             </div>
-        </motion.div>
+        </>
     )
 }
 
