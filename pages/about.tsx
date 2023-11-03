@@ -1,11 +1,11 @@
 import About from "~/components/About";
-import ContainerBlock from "~/components/ContainerBlock";
+import Layout from "~/components/Layout";
 
 const AboutPage = () => {
     return (
-        <ContainerBlock>
+        <Layout>
             <About />
-        </ContainerBlock>
+        </Layout>
     )
 }
 

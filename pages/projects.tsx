@@ -1,11 +1,11 @@
-import ContainerBlock from "~/components/ContainerBlock";
+import Layout from "~/components/Layout";
 import Projects from "~/components/Projects";
 
 const ProjectsPage = () => {
     return (
-        <ContainerBlock>
+        <Layout>
             <Projects />
-        </ContainerBlock>
+        </Layout>
     )
 }
 

@@ -1,11 +1,11 @@
-import ContainerBlock from "~/components/ContainerBlock";
 import Experience from "~/components/Experience";
+import Layout from "~/components/Layout";
 
 const ExperiencePage = () => {
     return (
-        <ContainerBlock>
+        <Layout>
             <Experience />
-        </ContainerBlock>
+        </Layout>
     )
 }
 

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 
 import Position from "~/components/Position";
 
@@ -93,18 +92,7 @@ const experiences = [
 
 const Experience = () => {
     return (
-        <motion.div
-            initial={{
-                opacity: 0,
-            }}
-            whileInView={{
-                opacity: 1,
-            }}
-            transition={{
-                duration: 1.5,
-            }}
-            className="min-h-screen flex flex-col max-w-5xl justify-start items-center mx-auto pt-10 pb-40 px-9"
-        >
+        <>
             <h3 className="uppercase tracking-[11px] text-center font-semibold text-gray-800 dark:text-gray-100 text-2xl pl-[11px] mb-9">
                 Experience
             </h3>
@@ -113,7 +101,7 @@ const Experience = () => {
                     <Position experience={experience} key={index} />
                 ))}
             </ol>
-        </motion.div>
+        </>
     )
 }
 
