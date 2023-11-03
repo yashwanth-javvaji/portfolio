@@ -1,12 +1,26 @@
 {
-  "name": "portfolio",
+  "name": "yashwanth-javvaji-portfolio",
   "version": "0.1.0",
+  "description": "Aspiring software engineer driven by a passion for product ownership and solving real-world challenges. Committed to delivering user-centric solutions that make a tangible impact.",
+  "author": "Yashwanth Javvaji",
+  "license": "MIT",
   "private": true,
+  "keywords": [
+    "portfolio",
+    "website",
+    "yashwanth",
+    "javvaji"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yashwanth-javvaji/portfolio"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
