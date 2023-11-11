@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { BASE_PATH } from "~/helpers/constant";
+
 type Props = {
     skill: string,
 };
@@ -10,7 +12,7 @@ const Skill = ({ skill }: Props) => {
             className="group relative flex flex-col justify-center items-center mx-auto max-w-sm rounded overflow-hidden shadow-2xl bg-transparent p-3 hover:scale-105"
         >
             <Image
-                src={`/images/skills/${skill}.jpeg`}
+                src={`${BASE_PATH}/images/skills/${skill}.jpeg`}
                 alt={skill}
                 height={100}
                 width={100}
