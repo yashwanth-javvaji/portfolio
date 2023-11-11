@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { BASE_PATH } from "~/helpers/constant";
+
 type Props = {
     experience: {
         "Title": string,
@@ -14,7 +16,7 @@ const Position = ({ experience }: Props) => {
     return (
         <li className="mb-10 ml-6">
             <Image
-                src={`/images/experience/${experience["Company name"]}.jpeg`}
+                src={`${BASE_PATH}/images/experience/${experience["Company name"]}.jpeg`}
                 alt={experience["Company name"]}
                 width={500}
                 height={500}
