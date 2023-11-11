@@ -378,7 +378,7 @@ const Contact = () => {
                         type="submit"
                         className={classNames(
                             !formValid.firstName || !formValid.lastName || !formValid.email || !formValid.subject || !formValid.message
-                                ? "bg-gray-300 cursor-not-allowed"
+                                ? "bg-gray-400 cursor-not-allowed"
                                 : "bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300",
                             "text-white font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center"
                         )}

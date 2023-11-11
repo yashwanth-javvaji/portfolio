@@ -38,7 +38,7 @@ const Navbar = forwardRef<HTMLDivElement>((_, ref) => {
                 <>
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                         <div className="relative flex h-16 items-center justify-between">
-                            <Link href="/" className="flex flex-row justify-center items-center gap-2 hover:animate-pulse transition duration-100">
+                            <Link href="/" className="flex flex-row justify-center items-center gap-2 hover:scale-105 hover:animate-pulse transition duration-300 ease-in-out">
                                 <span className="flex items-center justify-center w-8 h-8 rounded bg-white text-blue-900">
                                     <p className="font-bold">YJ</p>
                                 </span>
@@ -52,7 +52,7 @@ const Navbar = forwardRef<HTMLDivElement>((_, ref) => {
                                                 key={item.name}
                                                 href={item.href}
                                                 className={classNames(
-                                                    router.asPath === item.href ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-white hover:text-blue-900',
+                                                    router.asPath === item.href ? 'bg-gray-900 text-white' : 'text-gray-100 hover:bg-white hover:text-blue-900 transition duration-300 ease-in-out',
                                                     'px-3 py-2 rounded-md text-md font-medium'
                                                 )}
                                                 aria-current={router.asPath === item.href ? 'page' : undefined}
@@ -65,21 +65,21 @@ const Navbar = forwardRef<HTMLDivElement>((_, ref) => {
                             </div>
                             <div className="flex flex-row justify-end items-center">
                                 <a href="https://www.linkedin.com/in/yashwanth-javvaji/" target="_blank" rel="noreferrer">
-                                    <FaLinkedin className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-100" />
+                                    <FaLinkedin className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-300 ease-in-out" />
                                 </a>
                                 <a href="https://github.com/yashwanth-javvaji" target="_blank" rel="noreferrer">
-                                    <FaGithub className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-100" />
+                                    <FaGithub className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-300 ease-in-out" />
                                 </a>
                                 <a href="mailto:yashwanthjavvaji208@gmail.com">
-                                    <IoMdMail className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-100" />
+                                    <IoMdMail className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-300 ease-in-out" />
                                 </a>
                                 <a href="tel:3477915876">
-                                    <IoMdCall className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-100" />
+                                    <IoMdCall className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-300 ease-in-out" />
                                 </a>
                                 <span onClick={toggleTheme}>
                                     {(theme === 'light')
-                                        ? <MdLightMode className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-100" />
-                                        : <MdDarkMode className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-100" />}
+                                        ? <MdLightMode className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-300 ease-in-out" />
+                                        : <MdDarkMode className="block h-6 w-6 text-white mx-3 my-2 cursor-pointer hover:scale-125 hover:animate-pulse transition duration-300 ease-in-out" />}
                                 </span>
                                 <div className="inset-y-0 left-0 flex items-center lg:hidden">
                                     {/* Mobile menu button*/}
