@@ -18,7 +18,7 @@ const Hero = () => {
     return (
         <>
             <Image
-                src="/avatar.png"
+                src="./avatar.png"
                 alt="avatar"
                 height={300}
                 width={300}
