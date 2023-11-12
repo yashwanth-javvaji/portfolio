@@ -20,8 +20,8 @@ const capitalize = (strings: string[]) => {
 
 const Project = ({ project }: Props) => {
     return (
-        <div className="rounded overflow-hidden shadow-2xl hover:scale-105 hover:shadow-3xl transition duration-300 ease-in-out">
-            <Link href={project.html_url} target="_blank" rel="noreferrer" className="cursor-pointer">
+        <Link href={project.html_url} target="_blank" rel="noreferrer" className="cursor-pointer">
+            <div className="rounded overflow-hidden shadow-2xl hover:scale-105 hover:shadow-3xl transition duration-300 ease-in-out">
                 <div className="px-6 py-4">
                     <div className="flex flex-row justify-between items-center">
                         <p className="font-bold text-xl mb-1 text-gray-800 dark:text-gray-100">{capitalize(project.name.split("-")).join(" ")}</p>
@@ -35,8 +35,8 @@ const Project = ({ project }: Props) => {
                         <span key={index} className="inline-block bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-200 mr-2 mb-2">{topic}</span>
                     ))}
                 </div>
-            </Link>
-        </div>
+            </div>
+        </Link>
     )
 }
 
