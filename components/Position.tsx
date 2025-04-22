@@ -15,7 +15,7 @@ const Position = ({ experience }: Props) => {
     return (
         <li className="mb-10 ml-6">
             <Image
-                src={`./images/experience/${experience["Company name"]}.jpeg`}
+                src={`./images/experience/${experience["Company name"]}.webp`}
                 alt={experience["Company name"]}
                 width={500}
                 height={500}
