@@ -7,9 +7,11 @@ const Hero = () => {
         words: [
             "Sofware Engineer",
             "Full-Stack Developer",
-            "Data Analyst",
             "UI/UX Designer",
-            "Python Programmer",
+            "Problem Solver",
+            "DevOps Advocate",
+            "Cloud-Native Developer",
+            "AI & ML Explorer"
         ],
         loop: true,
         delaySpeed: 2000,

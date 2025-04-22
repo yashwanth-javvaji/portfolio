@@ -7,16 +7,16 @@ const About = () => {
             </h3>
             <div className="space-y-3 text-black dark:text-white text-lg text-justify">
                 <p className="[text-align-last:center]">
-                    I am a graduate student studying computer science at The University of Texas at Dallas with a focus on web development and data science. I&apos;m now seeking for internship and full-time positions to broaden my professional experience.
+                    I'm Yashwanth Javvaji, a results-driven Software Engineer with over 3 years of experience building secure, scalable, and high-performance systems across domains like cloud infrastructure, supply chain automation, and real-time data platforms. Currently, I’m part of the Amazon Web Services (AWS) team, where I work on cutting-edge systems that power inventory management and workforce solutions at scale.
                 </p>
                 <p className="[text-align-last:center]">
-                    I have about 10 months of software development internship experience. I am skilled in C++, Python, and JavaScript. I have worked on web-based applications using the latest web technologies. I am a specialist in UI & UX Design and in developing customer service-oriented applications with solid test automation strategies. In the past, I have worked on projects using MERN stack, Flask, and DevOps tools.
+                    Previously, I’ve had the opportunity to intern at top-tier companies like Tesla, ServiceNow, and Advance Auto Parts, where I led critical projects involving real-time tracking systems, GenAI integrations, and automation tooling. My tech stack spans GO, Kotlin, TypeScript, and frameworks like React, Spring, and Node.js. I’m equally at home deploying infrastructure with AWS CDK and Kubernetes as I am designing APIs or writing clean, maintainable frontend code.
                 </p>
                 <p className="[text-align-last:center]">
-                    I have a lot of expertise with JavaScript, HTML, CSS, and several open-source frameworks, including Node.js, Express.js, React.js, Angular and MongoDB. I am proficient in using these frameworks to create web apps with Single Page Applications (SPA) architectures. I can create sophisticated SQL queries utilizing well-known database servers like MySQL. In addition to my development work, I have strong problem-solving and bug-fixing abilities.
+                    Beyond technical work, I’m passionate about building systems that are not just functional, but also elegant, efficient, and secure. I thrive in environments where innovation meets impact, and I'm always exploring new ways to bridge complex engineering with user-centric design.
                 </p>
                 <p className="[text-align-last:center]">
-                    In addition to my skills in coding, I also worked as a placement coordinator. In this role, I was in charge of arranging placement-related tasks such as contacting human resources, providing guidance to students, responding to their emails, and gathering and storing student data to aid the placements team.
+                    Whether it's optimizing system performance, improving developer workflows, or diving into emerging tech like GenAI, I’m driven by a constant desire to learn, build, and solve meaningful problems.
                 </p>
             </div>
         </>
